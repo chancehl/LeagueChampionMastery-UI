@@ -5,6 +5,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { UniqueSummoners } from "@/components/unique-summoners";
 
 export default function LandingPage() {
   return (
@@ -21,7 +22,7 @@ export default function LandingPage() {
             className="text-sm font-medium hover:underline underline-offset-4"
             href="/top-summoners"
           >
-            Top summoners
+            Leaderboard
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-8"
@@ -57,12 +58,7 @@ export default function LandingPage() {
               />
               <Button type="submit">Search</Button>
             </div>
-            <div>
-              <span className="text-xs flex">
-                Over <p className="font-bold ml-0.5 mr-0.5">5 million</p> unique
-                summoners scanned
-              </span>
-            </div>
+            <UniqueSummoners />
           </div>
         </div>
       </main>

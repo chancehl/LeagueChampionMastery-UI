@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { prettyPrintMillions } from "@/lib/format";
+import { prettyPrintNumber } from "@/lib/format";
 
 async function getTopSummoners() {
   const res = await fetch("http://localhost:8080/summoners/top?page=0&size=10");
@@ -44,7 +44,7 @@ export default async function LeaderboardPage() {
                   #{index + 1} {summoner.name}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">
-                  {prettyPrintMillions(summoner.totalChampionPoints)} points
+                  {prettyPrintNumber(summoner.totalChampionPoints)} points
                 </p>
               </div>
             </div>

@@ -20,7 +20,7 @@ export default function LandingPage() {
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="/top-summoners"
+            href="/leaderboard"
           >
             Leaderboard
           </Link>

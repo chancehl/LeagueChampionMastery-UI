@@ -5,7 +5,6 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { JSX, SVGProps } from "react";
 
 export default function LandingPage() {
   return (
@@ -14,26 +13,32 @@ export default function LandingPage() {
         <nav className="ml-auto flex gap-6 sm:gap-12 w-full justify-center items-center">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
             href="/top-summoners"
           >
             Top summoners
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-8"
-            href="#"
+            href="/faq"
           >
             FAQ
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="/contact"
           >
             Contact
           </Link>
         </nav>
       </header>
-      <main className="flex-1 h-full">
-        <div className="w-full min-h-full py-12 md:py-24 lg:py-32 flex-1 ">
+      <main className="flex-1">
+        <div className="w-full py-12 md:py-24 lg:py-32 flex-1 ">
           <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6">
             <div className="space-y-2 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -61,7 +66,7 @@ export default function LandingPage() {
           </div>
         </div>
       </main>
-      <footer className="flex flex-col justify-center items-center gap-2 sm:flex-row py-6 w-full shrink-0 px-4 md:px-6 border-t">
+      <footer className="flex flex-col flex-grow-0 justify-center items-center gap-2 sm:flex-row py-6 w-full shrink-0 px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           Shamelessly generated with AI labor 🦾🤖
         </p>

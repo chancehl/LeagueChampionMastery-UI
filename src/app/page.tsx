@@ -64,7 +64,7 @@ export default function LandingPage() {
       </main>
       <footer className="flex flex-col flex-grow-0 justify-center items-center gap-2 sm:flex-row py-6 w-full shrink-0 px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          Shamelessly generated with AI labor 🦾🤖
+          Shamelessly made with AI labor 🦾🤖
         </p>
       </footer>
     </div>
